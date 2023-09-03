@@ -23,7 +23,7 @@ class ProductoAdmin(admin.ModelAdmin):
    
     list_display_links = ('nombre', 'laboratorio')
 
-    ñist_filter = ('nombre', 'laboratorio')
+    list_filter = ('nombre', 'laboratorio')
 
     def f_fabricacion_year(self, obj):
         return obj.f_fabricacion.year
